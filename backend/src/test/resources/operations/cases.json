@@ -1,0 +1,51 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "emissionsKg": "#500",
+      "lowerKg": "#475",
+      "upperKg": "#525",
+      "changeKg": "#-100"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "factor": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "emissionsKg": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "evidence": "PENDING"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "uncertaintyPct": "11"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "priorKg": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "changeKg": "#500"
+    },
+    "error": false
+  }
+]
